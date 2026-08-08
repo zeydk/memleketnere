@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow_38" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="skinGrad_38" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5dec5"/>
+      <stop offset="100%" stop-color="#b8866b"/>
+    </linearGradient>
+    <filter id="shadow_38">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="#0f172a"/>
+  <circle cx="300" cy="300" r="280" fill="url(#bgGlow_38)"/>
+
+  <!-- Neck -->
+  <rect x="220" y="380" width="160" height="150" fill="url(#skinGrad_38)" filter="url(#shadow_38)" rx="20"/>
+
+  <!-- Face Base Shape -->
+  <ellipse cx="300" cy="300" rx="150" ry="190" fill="url(#skinGrad_38)" filter="url(#shadow_38)"/>
+
+  <!-- Hair -->
+  <path d="M 140 280 C 140 120, 460 120, 460 280 C 420 180, 180 180, 140 280 Z" fill="#281e19"/>
+
+  <!-- Eyebrows -->
+  <path d="M 190 235 Q 230 222 270 238" fill="none" stroke="#281e19" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 330 238 Q 370 222 410 235" fill="none" stroke="#281e19" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="230" cy="260" rx="24" ry="14" fill="#ffffff"/>
+  <ellipse cx="370" cy="260" rx="24" ry="14" fill="#ffffff"/>
+  <circle cx="230" cy="260" r="10" fill="#3d2618"/>
+  <circle cx="370" cy="260" r="10" fill="#3d2618"/>
+  <circle cx="227" cy="257" r="3" fill="#ffffff"/>
+  <circle cx="367" cy="257" r="3" fill="#ffffff"/>
+
+  <!-- Nose -->
+  <path d="M 300 250 L 300 335 Q 280 345 275 335" fill="none" stroke="#a06e57" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 300 335 Q 320 345 325 335" fill="none" stroke="#a06e57" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Lips -->
+  <ellipse cx="300" cy="420" rx="38" ry="10" fill="#c06060"/>
+  <line x1="262" y1="420" x2="338" y2="420" stroke="#703030" stroke-width="2"/>
+
+  <!-- Landmark Triangulation Grid Overlay (EthnoGeoguessr Style) -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" fill="none">
+    <polygon points="230,260 300,230 370,260"/>
+    <polygon points="230,260 300,335 370,260"/>
+    <polygon points="230,260 180,330 300,335"/>
+    <polygon points="370,260 420,330 300,335"/>
+    <polygon points="300,335 262,420 300,510"/>
+    <polygon points="300,335 338,420 300,510"/>
+    <polygon points="262,420 338,420 300,510"/>
+    <circle cx="230" cy="260" r="4" fill="#38bdf8"/>
+    <circle cx="370" cy="260" r="4" fill="#38bdf8"/>
+    <circle cx="300" cy="335" r="4" fill="#38bdf8"/>
+    <circle cx="300" cy="420" r="4" fill="#38bdf8"/>
+    <circle cx="300" cy="510" r="4" fill="#38bdf8"/>
+  </g>
+</svg>
